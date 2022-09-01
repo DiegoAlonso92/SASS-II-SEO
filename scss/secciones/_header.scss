@@ -1,24 +1,32 @@
 header {
     // estilos header
-    background-color: black;
-    color: aqua;
+    background: linear-gradient(to right, black, green, black);
+    min-height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
     nav {
         // estilos al nav
 
         ul {
             // estilos a la ul
-            color: tomato;
             margin: 5px;
             padding: 5px;
             list-style: none;
             display: flex;
             align-items: flex-end;
+
         }
-        li{
+
+        li {
+            color: green;
             margin: 15px;
+
+            &:hover {
+                color: greenyellow;
+                font-weight: bolder;
+            }
         }
     }
 }

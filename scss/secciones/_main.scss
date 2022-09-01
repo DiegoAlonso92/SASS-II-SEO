@@ -1,45 +1,48 @@
 main {
     // estilos al main
     background-color: gray;
-    color: wheat;
-min-height: 80vh;
+    min-height: 80vh;
+
     section {
         // estilos a section
-        color: teal;
 
         h2 {
             // estilos del h2
-            color: beige;
+            color: green;
+            animation-name: Bienvenidos;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
 
+            @keyframes Bienvenidos {
+                0% {
+                    color: green;
+                    font-size: small;
+                }
+
+                30% {
+                    color: greenyellow;
+                    font-size: medium;
+                }
+
+                60% {
+                    color: green;
+                    font-size: larger;
+                }
+
+                100% {
+                    color: greenyellow;
+                    font-size: medium;
+                }
+            }
         }
 
         p {
             // estilos del parrafo
-            color: brown;
+            color: rgb(8, 119, 38);
 
         }
 
-        img {
-            // estilos de la imagen
-            color: burlywood;
-
-        }
-
-        button {
-            // estilos del boton
-            color: magenta;
-            &:hover {
-color: lightblue;
-            }
-        }
-        input{
-            color: aqua;
-            &:focus{
-color: goldenrod;
-            }
-            &:hover{
-color: darkblue;
-            }
-        }
     }
+
 }
