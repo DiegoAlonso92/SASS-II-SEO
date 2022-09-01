@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-color: black;
+  color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  header nav ul {
+    color: tomato;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    align-items: flex-end; }
+  header nav li {
+    margin: 15px; }
+
+main {
+  background-color: gray;
+  color: wheat;
+  min-height: 80vh; }
+  main section {
+    color: teal; }
+    main section h2 {
+      color: beige; }
+    main section p {
+      color: brown; }
+    main section img {
+      color: burlywood; }
+    main section button {
+      color: magenta; }
+      main section button:hover {
+        color: lightblue; }
+    main section input {
+      color: aqua; }
+      main section input:focus {
+        color: goldenrod; }
+      main section input:hover {
+        color: darkblue; }
+
+footer {
+  background-color: black;
+  color: aquamarine; }
+  footer ul {
+    color: yellowgreen; }
