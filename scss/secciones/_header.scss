@@ -1,32 +1,34 @@
-header {
-    // estilos header
-    background: linear-gradient(to right, black, green, black);
+.header {
+    background: linear-gradient(to right, black, $colorPrincipal, black);
     min-height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 
-    nav {
-        // estilos al nav
+    &__logo {
+        margin-left: 1rem;
+    }
 
-        ul {
+        &__ul {
             // estilos a la ul
-            margin: 5px;
-            padding: 5px;
             list-style: none;
             display: flex;
             align-items: flex-end;
+            margin: 5px;
+            padding: 5px;
 
-        }
+            li {
+                margin: 15px;
 
-        li {
-            color: green;
-            margin: 15px;
+                &:hover {
+                    font-weight: bolder;
+                }
 
-            &:hover {
-                color: greenyellow;
-                font-weight: bolder;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
             }
         }
+
     }
-}

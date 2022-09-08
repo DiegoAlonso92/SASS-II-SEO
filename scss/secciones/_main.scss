@@ -1,9 +1,9 @@
-main {
+.main {
     // estilos al main
     background-color: gray;
     min-height: 80vh;
 
-    section {
+    &__section {
         // estilos a section
 
         h2 {
@@ -43,6 +43,19 @@ main {
 
         }
 
+        .parrafo {
+            @extend %estiloparrafo;
+        }
+        .parrafo2{
+            @include fontStyle (rgb(23, 66, 23), rgb(36, 206, 36), 3rem)
+        }
+    }
+    .w-100 {
+        width: 50%!important;
+        margin: 10px 270px;
     }
 
+    .carousel-inner{
+        background-color: $colorFondoCarousel;
+    }
 }

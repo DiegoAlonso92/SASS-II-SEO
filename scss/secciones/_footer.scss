@@ -1,10 +1,10 @@
-footer {
+.footer {
     // estilos al footer
     display: flex;
     background: linear-gradient(to right, black, green, black);
     justify-content: space-evenly;
     min-height: 20vh;
-    ul {
+    &__ul {
         // estilos de la ul
         color: yellowgreen;
 img{
